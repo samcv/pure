@@ -130,11 +130,6 @@ prompt_pure_preprompt_render() {
 	local default_prompt_pre='%F{blue}'
 	preprompt_parts+=(${PURE_PROMPT_PRE}'%F{${prompt_pure_colors[path]}}%~%f')
 	# Set the path.
-#<<<<<<< HEAD
-#	preprompt_parts+=('%F{${prompt_pure_colors[path]}}%~%f')
-#=======
-#	preprompt_parts+=(${PURE_PROMPT_PRE:-$default_prompt_pre}'%~%f')
-#>>>>>>> Allow setting pre-prompt by user ENV var
 
 	# Add Git branch and dirty status info.
 	typeset -gA prompt_pure_vcs_info
